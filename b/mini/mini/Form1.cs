@@ -16,5 +16,19 @@ namespace mini
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button1 Check = new Button1();
+            Check.Show();
+            Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Button2 Check = new Button2();
+            Check.Show();
+            Hide();
+        }
     }
 }
