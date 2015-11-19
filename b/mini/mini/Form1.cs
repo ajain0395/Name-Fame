@@ -19,14 +19,31 @@ namespace mini
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button1 Check = new Button1();
-            Check.Show();
-            Hide();
+          Bt1 Check = new Bt1();
+        Check.Show();
+         Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Button2 Check = new Button2();
+            Check.Show();
+            Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            about Check = new about();
             Check.Show();
             Hide();
         }
