@@ -39,11 +39,11 @@ namespace mini
                    string select = "";
 
                     if (male.Checked == true)
-                        select = "select name,amount,position,sex from combine where [position] <=" + ttop + " and year = " + yyear + " and sex = 'm' order by (cast (position as int)) ";
+                        select = "select name,amount,position,sex from male where [position] <=" + ttop + " and year = " + yyear + " and sex = 'm' order by (cast (position as int)) ";
                     else if (both.Checked == true)
                         select = "select name,amount,position,sex from combine where [position] <=" + ttop + " and year = " + yyear + " order by (cast (position as int)) ";
                     else if (female.Checked == true)
-                        select = "select name,amount,position,sex from combine where [position] <=" + ttop + " and year = " + yyear + " and sex = 'f' order by (cast (position as int)) ";
+                        select = "select name,amount,position,sex from female where [position] <=" + ttop + " and year = " + yyear + " and sex = 'f' order by (cast (position as int)) ";
 
                     //select = "select * from combine where position <=" + Convert.ToString(ttop) + " and year = " + yyear + "order by amount desc";
                     //code here

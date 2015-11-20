@@ -26,6 +26,7 @@ namespace mini
             char g;
             string nname = name.Text;
             string select;
+            string table;
             if (year.Text.Length == 4 && nname.Length > 0)
             {
                 int yyear = Convert.ToInt32(year.Text);
@@ -34,15 +35,15 @@ namespace mini
                 else
                 {
                     if (male.Checked == true)
-                     g = 'm';
+                        table = "male";
                     else
-                    g = 'f';
+                        table = "female";
                    
                    // select = "select amount from combine where name='" + nname + "' AND year=" + yyear + " and sex='f'";
                     ////code here
                     for (int i = yyear; i <= 2013; i++)
                     {
-                        select = "select amount from combine where name='" + nname + "' AND year=" + i + " and sex='"+g+"'";
+                        select = "select amount from "+table+" where name='" + nname + "' AND year=" + i ;
                         int q, p;
                         string l, n;
                         q = i;
